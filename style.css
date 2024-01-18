@@ -1,16 +1,15 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
 :root {
     --main-color: #0a1d48;
 }
 
-
 * {
     /* font-family: 'Nunito', sans-serif; */
-    /* font-family: 'Quicksand', sans-serif; */
-    font-family: 'Nova Square', sans-serif;
+    /* font-family: 'Nova Square', sans-serif; */
+    font-family: 'Quicksand', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -38,13 +37,13 @@ html::-webkit-scrollbar-track {
 
 html::-webkit-scrollbar-thumb {
     background: var(--main-color);
+    background: #4d1c1c;
     border-radius: 5rem;
 }
 
 body {
     /* background: #01041e; */
     background: #0003238a;
-    /* background: initial; */
 }
 
 section {
@@ -75,7 +74,7 @@ section {
 .header a {
     font-size: 1rem;
     color: #fff;
-    margin-right: 2rem;
+    /* margin-right: 2rem; */
 }
 
 .header .navbar a:hover {
@@ -91,7 +90,7 @@ section {
 
 .home .content {
     text-align: center;
-    /* padding-top: 0rem; */
+    padding-top: 1rem;
     margin: 2rem auto;
     max-width: 70rem;
 }
@@ -101,9 +100,16 @@ section {
     text-transform: uppercase;
 }
 
+.home .content h2 span {
+    font-family: 'Quicksand', sans-serif;
+    color: #00031f;
+    text-transform: uppercase;
+    font-weight: bold;
+}
 
-
-
+.search {
+    color: #fff;
+}
 
 
 
@@ -114,17 +120,6 @@ section {
         font-size: 90%;
     }
 }
-
-/* @media (max-width:991px) {
-    html {
-        font-size: 55%;
-    }
-
-    .header {
-        padding: 1.5rem 2rem;
-    }
-
-} */
 
 @media (max-width:768px) {
     html {
@@ -158,9 +153,6 @@ section {
 
     .fa-times {
         transform: rotate(180deg);
-        /* margin-top: 0;
-        transform: rotate(-90deg);
-        transition-delay: 0, .8s; */
     }
 
     .header .navbar a {
