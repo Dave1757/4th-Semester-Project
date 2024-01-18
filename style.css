@@ -125,7 +125,7 @@ section {
     html {
         font-size: 55%;
     }
-
+    
     .header {
         padding: 1.5rem 2rem;
     }
@@ -154,7 +154,7 @@ section {
     .fa-times {
         transform: rotate(180deg);
     }
-
+    
     .header .navbar a {
         display: flex;
         /* coloumn-wise for mobile and tablet display */
@@ -164,10 +164,20 @@ section {
         margin: 1.3rem;
         font-size: 1.5rem;
     }
+    .search {
+        color: #fff;
+        position: fixed;
+        left: 50%;
+    }
 }
 
 @media (max-width:450px) {
     html {
         font-size: 55%;
+    }
+    .search {
+        color: #fff;
+        position: fixed;
+        left: 50%;
     }
 }
