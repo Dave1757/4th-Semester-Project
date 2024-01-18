@@ -17,7 +17,7 @@
     border: none;
     text-decoration: none;
     text-transform: capitalize;
-    transition: .2s linear;
+    transition: .3s linear;
 }
 
 html {
@@ -58,8 +58,10 @@ section {
     z-index: 1000;
     /* background: #01041e; */
     background: #00031f;
+
     display: flex;
-    /* coloumn-wise for laptop and desktop display */
+    /* column-wise for laptop and desktop display */
+
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem 4%;
@@ -115,17 +117,27 @@ section {
 
 
 /*media queries*/
+
+/* Applicable upto width: 991px */
 @media (max-width:991px) {
+
     html {
         font-size: 90%;
     }
+    /* .header .navbar a {
+        font-size: medium;
+        color: #fff;
+        margin-right: 2rem;
+    } */
 }
 
+/* Applicable upto width: 768px */
 @media (max-width:768px) {
-    html {
+
+    /* html {
         font-size: 55%;
-    }
-    
+    } */
+
     .header {
         padding: 1.5rem 2rem;
     }
@@ -133,8 +145,9 @@ section {
     /* hamburger displayed */
     #menu-bars {
         display: initial;
+        font-size: medium;
     }
-
+    
     .header .navbar {
         position: absolute;
         top: 100%;
@@ -152,18 +165,21 @@ section {
     }
 
     .fa-times {
-        transform: rotate(180deg);
+        transform: rotate(90deg);
     }
-    
+
     .header .navbar a {
+
         display: flex;
         /* coloumn-wise for mobile and tablet display */
+        
         background: #222;
         border-radius: .5rem;
         padding: 1.3rem;
         margin: 1.3rem;
-        font-size: 1.5rem;
+        font-size: medium;
     }
+
     .search {
         color: #fff;
         position: fixed;
@@ -171,11 +187,23 @@ section {
     }
 }
 
+/* Applicable upto width: 450px */
 @media (max-width:450px) {
-    html {
+
+    /* html {
         font-size: 55%;
+    } */
+    .header .navbar a {
+        font-size: medium;
     }
+
+    #menu-bars {
+        display: initial;
+        font-size: medium;
+    }
+
     .search {
+        font-size: medium;
         color: #fff;
         position: fixed;
         left: 50%;
