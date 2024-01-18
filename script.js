@@ -1,8 +1,11 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const burgerMenu = document.querySelector('.burger-menu');
-    const navList = document.querySelector('.nav-list');
+let menu = document.querySelector('#menu-bars');
+let navbar = document.querySelector('.navbar');
 
-    burgerMenu.addEventListener('click', function () {
-        navList.classList.toggle('show');
-    });
-});
+menu.onclick = () => {
+    menu.classList.toggle('fa-times');
+    navbar.classList.toggle('active');
+}
+window.onscroll = () => {
+    menu.classList.remove('fa-times');
+    navbar.classList.remove('active');
+}
