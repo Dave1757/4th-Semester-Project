@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
 
 :root {
     --main-color: #0a1d48;
@@ -6,7 +8,9 @@
 
 
 * {
-    font-family: 'Nunito', sans-serif;
+    /* font-family: 'Nunito', sans-serif; */
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Nova Square', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -39,8 +43,12 @@ html::-webkit-scrollbar-thumb {
 
 body {
     /* background: #01041e; */
-    background: #696fa8;
+    background: #0003238a;
     /* background: initial; */
+}
+
+section {
+    padding: 2rem 9%;
 }
 
 .header {
@@ -50,7 +58,7 @@ body {
     right: 0;
     z-index: 1000;
     /* background: #01041e; */
-    background: #696fa8;
+    background: #00031f;
     display: flex;
     /* coloumn-wise for laptop and desktop display */
     align-items: center;
@@ -81,6 +89,24 @@ body {
     display: none;
 }
 
+.home .content {
+    text-align: center;
+    /* padding-top: 0rem; */
+    margin: 2rem auto;
+    max-width: 70rem;
+}
+
+.home .content h2 {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
 
 /*media queries*/
 @media (max-width:991px) {
@@ -97,10 +123,8 @@ body {
     .header {
         padding: 1.5rem 2rem;
     }
-    
+
 } */
-
-
 
 @media (max-width:768px) {
     html {
@@ -124,13 +148,19 @@ body {
         border-top: 0.1rem solid #222;
         background: #333;
         /* background: #222; */
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
     }
 
     .fa-times {
-        /* transform: rotate(180deg); */
-        margin-top: 0;
+        transform: rotate(180deg);
+        /* margin-top: 0;
         transform: rotate(-90deg);
-        transition-delay: 0, .8s;
+        transition-delay: 0, .8s; */
     }
 
     .header .navbar a {
@@ -141,7 +171,6 @@ body {
         padding: 1.3rem;
         margin: 1.3rem;
         font-size: 1.5rem;
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
 }
 
