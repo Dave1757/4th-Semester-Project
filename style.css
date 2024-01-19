@@ -122,8 +122,8 @@ input {
     border-radius: 20px 20px 20px 20px;
     height: 2.5em;
     width: 2.5em;
-    background-color: #e317175e;
-    /* opacity: 0; */
+    background-color: #fff;
+    opacity: 0;
     cursor: pointer;
 }
 
@@ -164,8 +164,8 @@ input:focus {
         border-radius: 20px 20px 20px 20px;
         height: 2.5em;
         width: 2.5em;
-        background-color: #d5000044;
-        /* opacity: 0; */
+        background-color: #fff;
+        opacity: 0;
         cursor: pointer;
     }
 
@@ -242,8 +242,8 @@ input:focus {
         border-radius: 20px 20px 20px 20px;
         height: 2.5em;
         width: 2.5em;
-        background-color: #c6000068;
-        /* opacity: 0; */
+        background-color: #fff;
+        opacity: 0;
         cursor: pointer;
     }
 
@@ -284,13 +284,13 @@ input:focus {
         position: absolute;
         top: 14px;
         right: 43%;
-        color: #d04343;
+        color: #000000;
         padding-left: 10px;
         border-radius: 20px 20px 20px 20px;
         height: 2.5em;
         width: 2.5em;
-        background-color: #ff00005a;
-        /* opacity: 0; */
+        background-color: #fff;
+        opacity: 0;
         cursor: pointer;
     }
     
