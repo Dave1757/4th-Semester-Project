@@ -103,35 +103,85 @@ section {
 }
 
 .home .content h2 span {
-    font-family: 'Quicksand', sans-serif;
     color: #00031f;
     text-transform: uppercase;
     font-weight: bold;
 }
 
-.search {
+/* .search {
     color: #fff;
+} */
+
+/* Search Button */
+input {
+    position: fixed;
+    top: 17px;
+    right: 3.5em;
+    color: #000000;
+    padding-left: 10px;
+    border-radius: 20px 20px 20px 20px;
+    height: 2.5em;
+    width: 2.5em;
+    background-color: #fff;
+    opacity: 0;
+    cursor: pointer;
 }
 
+input:focus {
+    display: initial;
+    transform: translate(-2.5em, 0) scale(1);
+    transform-origin: 100%;
+    transition: 0.4s;
+    width: auto;
+    opacity: 100;
+    z-index: -1;
+    cursor: text;
+}
 
-
+/* Search Button */
 
 /*media queries*/
 
-/* Applicable upto width: 991px */
+/* Applicable below width: 991px */
 @media (max-width:991px) {
 
     html {
         font-size: 90%;
     }
+
     /* .header .navbar a {
         font-size: medium;
         color: #fff;
         margin-right: 2rem;
     } */
+
+    input {
+        position: absolute;
+        top: 14px;
+        right: 1.5em;
+        color: #000000;
+        padding-left: 10px;
+        border-radius: 20px 20px 20px 20px;
+        height: 2.5em;
+        width: 2.5em;
+        background-color: #fff;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    input:focus {
+        display: initial;
+        transform: translate(-2.5em, 0) scale(1);
+        transform-origin: 100%;
+        transition: 0.4s;
+        width: 11em;
+        opacity: 100;
+        z-index: -1;
+        cursor: text;
+    }
 }
 
-/* Applicable upto width: 768px */
+/* Applicable below width: 768px */
 @media (max-width:768px) {
 
     /* html {
@@ -147,7 +197,7 @@ section {
         display: initial;
         font-size: medium;
     }
-    
+
     .header .navbar {
         position: absolute;
         top: 100%;
@@ -155,13 +205,11 @@ section {
         right: 0;
         border-top: 0.1rem solid #222;
         background: #333;
-        /* background: #222; */
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
 
     .header .navbar.active {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-
     }
 
     .fa-times {
@@ -172,7 +220,7 @@ section {
 
         display: flex;
         /* coloumn-wise for mobile and tablet display */
-        
+
         background: #222;
         border-radius: .5rem;
         padding: 1.3rem;
@@ -180,14 +228,38 @@ section {
         font-size: medium;
     }
 
-    .search {
+    /* .search {
         color: #fff;
         position: fixed;
         left: 50%;
+    } */
+    input {
+        position: absolute;
+        top: 14px;
+        right: 44%;
+        color: #000000;
+        padding-left: 10px;
+        border-radius: 20px 20px 20px 20px;
+        height: 2.5em;
+        width: 2.5em;
+        background-color: #fff;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    input:focus {
+        display: initial;
+        transform: translate(-2.5em, 0) scale(1);
+        transform-origin: 100%;
+        transition: 0.4s;
+        width: auto;
+        opacity: 100;
+        z-index: -1;
+        cursor: text;
     }
 }
 
-/* Applicable upto width: 450px */
+/* Applicable below width: 450px */
 @media (max-width:450px) {
 
     /* html {
@@ -202,10 +274,34 @@ section {
         font-size: medium;
     }
 
-    .search {
+    /* .search {
         font-size: medium;
         color: #fff;
         position: fixed;
         left: 50%;
+    } */
+    input {
+        position: absolute;
+        top: 14px;
+        right: 40%;
+        color: #000000;
+        padding-left: 10px;
+        border-radius: 20px 20px 20px 20px;
+        height: 2.5em;
+        width: 2.5em;
+        background-color: #fff;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    input:focus {
+        display: initial;
+        transform: translate(4em, 0) scale(1);
+        transform-origin: 100%;
+        transition: 0.4s;
+        width: auto;
+        opacity: 100;
+        z-index: 1;
+        cursor: text;
     }
 }
