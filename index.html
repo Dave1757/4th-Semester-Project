@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -15,16 +16,16 @@
 
     <!-- header starts -->
     <header class="header">
-        <a href="#" class="logo">Momenta</a>
+        <a href="#home" class="logo">Momenta</a>
         <nav class="navbar hover">
             <a href="#home">Home</a>
-            <a href="#services">Services</a>
+            <a href="#Services">Services</a>
             <a href="#gallery">Gallery</a>
             <a href="#review">Review</a>
             <a href="#about">About</a>
             <a href="#contact">contact</a>
         </nav>
-        
+
         <!-- <i class="search fa fa-search"></i> -->
 
         <!-- Search Button starts-->
@@ -47,12 +48,23 @@
         <div class="content">
             <h2>Upcoming <span>Events</span></h2>
         </div>
+
+        <div class="swiper-container home-slider">
+            <div class="swiper-wrapper">
+                <div id="i1" class="swiper-slide"><img src="./img/webinar.jpg" alt=""></div>
+                <div id="i2" class="swiper-slide"><img src="./img/concert.jpg" alt=""></div>
+                <div id="i3" class="swiper-slide"><img src="./img/foodfest.jpg" alt=""></div>
+                <div id="i4" class="swiper-slide"><img src="./img/photography.jpg" alt=""></div>
+                <div id="i5" class="swiper-slide"><img src="./img/fashion show.jpg" alt=""></div>
+            </div>
+        </div>
     </section>
     <!-- home ends -->
 
-    <!-- js file -->
+    <!-- js files -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
-    <!-- js file -->
+    <!-- js files -->
 </body>
 
 </html>
