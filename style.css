@@ -107,7 +107,25 @@ section.home {
     font-weight: 900;
 }
 
+.home .home-slider .swiper-slide {
+    overflow: hidden;
+    border-radius: 30px;
+    height: 20rem;
+    width: 35rem;
+    /* filter: blur(50%); */
+}
 
+.home .home-slider .swiper-slide img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.home .home-slider .swiper-slide img:hover {
+    /* opacity: 0.5; */
+    filter: blur(2px);
+    transition: 0.2s;
+}
 
 /* Search Button starts*/
 input {
@@ -137,14 +155,14 @@ input:focus {
 
 /* Search Button ends*/
 
-
+/* navbar hover section starts*/
 .hover a {
     display: inline-block;
     position: relative;
     color: #fff;
-  }
-  
-  .hover a::after {
+}
+
+.hover a::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -155,13 +173,14 @@ input:focus {
     background-color: #ffffff;
     transform-origin: bottom right;
     transition: transform .3s ease-out;
-  }
-  
-  .hover a:hover::after {
+}
+
+.hover a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
-  }
+}
 
+/* navbar hover section ends*/
 
 
 
