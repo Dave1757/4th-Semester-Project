@@ -42,7 +42,7 @@ html::-webkit-scrollbar-thumb {
 
 body {
     /* background: #0003238a; */
-    background: no-repeat url(/img/bg8.jpg);
+    background: no-repeat url(./img/bg8.jpg);
     /* background: center / cover no-repeat url(img/bg8.jpg); */
 
     background-size: cover;
