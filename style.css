@@ -326,6 +326,7 @@ input:focus {
         display: initial;
         font-size: medium;
         position: fixed;
+        right: 35px;
     }
 
     .header .navbar {
@@ -440,6 +441,7 @@ input:focus {
         display: initial;
         font-size: medium;
         position: fixed;
+        right: 30px;
     }
 
     /* .search {
