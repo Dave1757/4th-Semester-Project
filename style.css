@@ -114,12 +114,19 @@ section.home {
 
 /* home images starts */
 
+.home .home-slider {
+    width: 100%;
+    /* padding-top: 50px; */
+    padding-bottom: 50px;
+}
+
 .home .home-slider .swiper-slide {
-    overflow: hidden;
-    border-radius: 30px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 25px;
     height: 20rem;
     width: 35rem;
-    /* filter: blur(50%); */
+    overflow: hidden;
 }
 
 .home .home-slider .swiper-slide img {
