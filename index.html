@@ -16,15 +16,15 @@
 
 
 
-    <style>
-        /* body {
+    <!-- <style>
+        body {
       background: #eee;
       font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
       font-size: 14px;
       color: #000;
       margin: 0;
       padding: 0;
-    } */
+    }
 
     .swiper {
       width: 100%;
@@ -43,7 +43,7 @@
       display: block;
       width: 100%;
     }
-    </style>
+    </style> -->
 
 
 
@@ -83,11 +83,11 @@
     <!-- header ends -->
 
     <!-- home starts -->
-    <!-- <section class="home" id="home">
+    <section class="home" id="home">
         <div class="content">
             <h2>Upcoming <span>Events</span></h2>
         </div>
-
+        <!-- 
         <div class="swiper-container home-slider">
             <div class="swiper-wrapper">
                 <div id="i1" class="swiper-slide"><img src="./img/webinar.jpg" alt=""></div>
@@ -96,65 +96,46 @@
                 <div id="i4" class="swiper-slide"><img src="./img/photography.jpg" alt=""></div>
                 <div id="i5" class="swiper-slide"><img src="./img/fashion show.jpg" alt=""></div>
             </div>
+        </div> -->
+
+
+
+        <!-- Swiper -->
+        <div class="swiper-container home-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <!-- <img src="https://swiperjs.com/demos/images/nature-1.jpg" /> -->
+                    <img src="./img/webinar.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <!-- <img src="https://swiperjs.com/demos/images/nature-2.jpg" /> -->
+                    <img src="./img/concert.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <!-- <img src="https://swiperjs.com/demos/images/nature-3.jpg" /> -->
+                    <img src="./img/foodfest.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <!-- <img src="https://swiperjs.com/demos/images/nature-4.jpg" /> -->
+                    <img src="./img/photography.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <!-- <img src="https://swiperjs.com/demos/images/nature-5.jpg" /> -->
+                    <img src="./img/fashion show.jpg" alt="">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
         </div>
-    </section> -->
+
+    </section>
     <!-- home ends -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Swiper -->
-    <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-            </div>
-            <div class="swiper-slide">
-                <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-            </div>
-            <div class="swiper-slide">
-                <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-            </div>
-            <div class="swiper-slide">
-                <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-            </div>
-            <div class="swiper-slide">
-                <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-            </div>
-            <div class="swiper-slide">
-                <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-            </div>
-            <div class="swiper-slide">
-                <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-            </div>
-            <div class="swiper-slide">
-                <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-            </div>
-            <div class="swiper-slide">
-                <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-            </div>
-        </div>
-        <div class="swiper-pagination"></div>
-    </div>
-
-
-
 
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- Initialize Swiper -->
-    <script>
+    <!-- <script>
         var swiper = new Swiper(".mySwiper", {
             effect: "coverflow",
             grabCursor: true,
@@ -170,7 +151,7 @@
             pagination: {
                 el: ".swiper-pagination",
             },
-        });
+        }); -->
     </script>
 
 
