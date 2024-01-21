@@ -15,7 +15,6 @@ window.onscroll = () => {
 // swiper section starts
 var swiper = new Swiper(".home-slider", {
     effect: "coverflow",
-    grabCursor: true,
     centeredSlides: true,
     slidesPerView: "auto",
     coverflowEffect: {
