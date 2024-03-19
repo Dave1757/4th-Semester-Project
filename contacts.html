@@ -2,77 +2,223 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
 </head>
 
 <body>
+    <!-- NAVBAR START -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light ms-4 me-5 p-0" href="index.html"><img src="./img/logo.png"
+                    alt="Momenta"></a>
+            <div class="sidebar offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
 
-    <!-- HEADER starts -->
-    <header class="header">
-        <a href="index.html" class="logo">Momenta</a>
-        <nav class="navbar hover">
-            <a href="index.html">Home</a>
-            <a href="#events">Events</a>
-            <a href="#services">Services</a>
-            <a href="#gallery">Gallery</a>
-            <a href="#about">About</a>
-            <a href="contacts.html">Contact</a>
-        </nav>
+                <!-- Sidebar Header Start -->
+                <div class="offcanvas-header justify-content-end">
+                    <!-- Hamburger Menu Close Button Start -->
+                    <button type="button" class="btn-close btn-close-white shadow-none me-1 mt-1"
+                        data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <!-- Hamburger Menu Close Button End -->
+                </div>
+                <!-- Sidebar Header End -->
 
-        <!-- <i class="search fa fa-search"></i> -->
+                <div class="offcanvas-body justify-content-end">
 
-        <!-- Search Button starts-->
-        <form action="" class="search-bar">
-            <input type="text" class="search-text" placeholder="Search">
-            <a href="#" class="btn"><i class="fa fa-search"></i></a>
-        </form>
-        <!-- Search Button ends -->
+                    <!-- Navbar Center Items Start -->
+                    <ul class="navbar-nav text-light">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <!-- Events Start -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Events
+                            </a>
+                            <!-- Events Dropdown Items Start -->
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="events.html">Glamour Gala</a></li>
+                                <li><a class="dropdown-item" href="events.html">Lens & Light</a></li>
+                                <li><a class="dropdown-item" href="events.html">Rhythm Rival</a></li>
+                                <li><a class="dropdown-item" href="events.html">Eatzz Fest</a></li>
+                                <li><a class="dropdown-item" href="events.html">Scaler Academy</a></li>
+                                <li><a class="dropdown-item" href="events.html">Cultural Carnival</a></li>
+                            </ul>
+                            <!-- Events Dropdown Items End -->
+                        </li>
+                        <!-- Events End -->
 
-        <!-- Hamburger menu icon starts-->
-        <div id="menu-bars" class="fas fa-bars"></div>
-        <!-- Hamburger menu icon ends-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Moments</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <!-- Navbar Center Items End -->
 
+                    <!-- Search Button Start -->
+                    <!-- Search Button End -->
+                    <form class="search-form ms-5" role="search">
+                        <input class="form-control border-0 shadow-none" type="search" placeholder="Enter Keywords.."
+                            aria-label="Search">
+                        <button class="search-btn btn btn-success border-0" type="submit"><i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
 
-    </header>
-    <!-- HEADER ends -->
+            <div class="d-flex">
+                <div class="login-signup">
+                    <a class="btn btn-success login-btn" href="">Login</a>
+                    <a class="btn btn-warning signup-btn" href="">Signup</a>
+                </div>
 
-    <!-- CONTACT Section Start -->
-    <section class="home" id="home">
-        <div class="content">
-            <h2><span>Contact </span>Us</h2>
+                <!-- Hamburger Button Start -->
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon shadow-none border-0"></span>
+                </button>
+                <!-- Hamburger Button End -->
+            </div>
         </div>
+    </nav>
+    <!-- NAVBAR END -->
 
-        <div class="contacts">
-            <div class="head">Phone<br><br>
-                <div class="text">
-                    7894032948<br><br>7064512875
+
+    <!-- CONTACT START -->
+    <!-- Contact Head Start -->
+    <div class="cont-head text-dark text-center pt-4 pb-3">
+        <h2>
+            Contact <span>Us</span>
+        </h2>
+    </div>
+    <!-- Contact Head End -->
+
+    <!-- Contact Body Start -->
+    <div class="cont-body mx-5 px-3">
+        <div class="content d-flex justify-content-between align-items-center">
+            <div class="left-side px-5">
+                <div class="address details">
+                    <i class="fas fa-location-dot"></i>
+                    <div class="topic">Address</div>
+                    <div class="text-one">KIIT University,</div>
+                    <div class="text-two">Bhubaneswar</div>
+                </div>
+                <div class="phone details">
+                    <i class="fas fa-phone"></i>
+                    <div class="topic">Phone</div>
+                    <div class="text-one">+91-7064512875</div>
+                    <div class="text-two">+91-7894032948</div>
+                </div>
+                <div class="email details">
+                    <i class="fas fa-envelope"></i>
+                    <div class="topic">Email</div>
+                    <div class="text-one">chinmayapanda445@gmail.com</div>
+                    <div class="text-two">asishabhishek99@gmail.com</div>
                 </div>
             </div>
-            <div class="head">Email<br><br>
-                <div class="text">
-                    asishabhishek99@gmail.com<br><br>chinmayapanda445@gmail.com
-                </div>
+
+
+            <div class="right-side">
+                <div class="topic-text">Send us a message</div>
+                <p class="text-light mb-4">"Quickly send a message to connect, inquire, or express with our simple and
+                    efficient form. Share your thoughts, questions, or requests with ease! We will be happy to hear you"
+                </p>
+                <form action="#">
+                    <div class="input-box">
+                        <input type="text" placeholder="Enter Your Name">
+                    </div>
+                    <div class="input-box">
+                        <input type="text" placeholder="Enter Your Email">
+                    </div>
+                    <div class="col-sm-6 w-100 message-box">
+                        <textarea class="cont-input reg-input form-control rounded w-100" id="inputMessage"
+                            placeholder="Enter Your Message"></textarea>
+                    </div>
+                    <div class="button">
+                        <input type="button" value="Send">
+                    </div>
+                </form>
             </div>
-            <div class="head">Address<br><br>
-                <div class="text">
-                    KIIT University,<br><br>Bhubaneswar
+
+        </div>
+    </div>
+    <!-- Contact Body End -->
+    <!-- CONTACT END -->
+
+
+    <!-- FOOTER START -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="row">
+                <div class="footer-col foot-company">
+                    <div class="footer-logo">
+                        <img src="./img/logo.png" alt="">
+                        <ul>
+                            <li>&copy; 2024 Momenta.Inc</li>
+                            <li>All Rights Reserved</li>
+                        </ul>
+                    </div>
                 </div>
+
+                <div class="footer-col foot-useful-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col foot-contacts">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +91-7064512875 | +91-7894032948</li>
+                        <li><i class="fas fa-envelope"></i> chinmayapanda445@gmail.com</li>
+                        <li><i class="fas fa-envelope"></i> asishabhishek99@gmail.com</li>
+                        <li><i class="fas fa-location-dot"></i> Bhubaneswar, Odisha</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col foot-social">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
             </div>
         </div>
-    </section>
-    <!-- CONTACT Section End -->
+    </footer>
+    <!-- FOOTER END -->
 
-    <!-- js files -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
-    <!-- js files -->
+
+    <!-- JAVASCRIPT LINKS START -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- JAVASCRIPT LINKS END -->
 </body>
 
 </html>
